@@ -1,13 +1,13 @@
-DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Official Report Card - Sadiya</title>
+    <title>Happy Birthday Sadiya</title>
     <style>
         body { 
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
-            background-color: #f4f7f6; 
+            background-color: #fdfaf6; /* Very soft warm background */
             color: #333; 
             display: flex; 
             justify-content: center; 
@@ -19,62 +19,101 @@ DOCTYPE html>
         .card { 
             background: white; 
             border-radius: 15px; 
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1); 
-            padding: 30px; 
-            max-width: 400px; 
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15); 
+            padding: 25px; 
+            max-width: 450px; 
             width: 100%; 
             text-align: center; 
-            border-top: 8px solid #f39c12; /* A nice golden teacher theme */
+            border-top: 10px solid #800020; /* Deep Maroon to match her dress */
         }
+        
+        /* Photo Styling */
+        .photo-container {
+            margin-bottom: 20px;
+        }
+        .photo-container img {
+            width: 100%;
+            max-width: 300px;
+            border-radius: 15px;
+            box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+            border: 4px solid #fff;
+            outline: 2px solid #d4af37; /* Gold border */
+        }
+
         h1 { 
-            color: #2c3e50; 
-            font-size: 24px; 
+            color: #800020; 
+            font-size: 26px; 
             margin-bottom: 5px; 
             text-transform: uppercase;
             letter-spacing: 1px;
         }
         h2 { 
             color: #7f8c8d; 
-            font-size: 18px; 
+            font-size: 16px; 
             font-weight: normal; 
             margin-top: 0; 
-            margin-bottom: 30px; 
+            margin-bottom: 20px; 
             line-height: 1.5;
         }
         .student-name {
-            color: #e67e22;
+            color: #d4af37; /* Gold color */
             font-weight: bold;
-            font-size: 22px;
+            font-size: 24px;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
         }
+        
         .grade-row { 
             display: flex; 
             justify-content: space-between; 
             border-bottom: 1px solid #eee; 
-            padding: 15px 0; 
-            font-size: 16px; 
+            padding: 10px 0; 
+            font-size: 15px; 
             text-align: left;
         }
         .grade { 
             font-weight: bold; 
             color: #27ae60; 
-            font-size: 18px; 
+            font-size: 16px; 
             text-align: right;
         }
+        
+        /* Personal Message Styling */
+        .love-note {
+            margin-top: 25px;
+            padding: 20px;
+            background-color: #fffcf5; /* Soft cream */
+            border: 2px dashed #d4af37;
+            border-radius: 10px;
+            text-align: left;
+            font-size: 15px;
+            line-height: 1.6;
+            color: #4a4a4a;
+            font-style: italic;
+        }
+        .love-note strong {
+            font-style: normal;
+            color: #800020;
+            display: block;
+            margin-bottom: 12px;
+            font-size: 17px;
+            text-align: center;
+        }
+
         .footer { 
-            margin-top: 30px; 
-            font-size: 15px; 
+            margin-top: 20px; 
+            font-size: 14px; 
             color: #555; 
-            font-style: italic; 
             background-color: #f9f9f9;
             padding: 15px;
             border-radius: 8px;
-            border-left: 4px solid #f39c12;
+            border-left: 4px solid #800020;
             text-align: left;
         }
+        
         .btn { 
             margin-top: 25px; 
             padding: 14px 24px; 
-            background-color: #3498db; 
+            background-color: #800020; 
             color: white; 
             border: none; 
             border-radius: 8px; 
@@ -87,7 +126,7 @@ DOCTYPE html>
             transition: 0.3s;
         }
         .btn:hover {
-            background-color: #2980b9;
+            background-color: #5c0017;
         }
         .hidden-message { 
             display: none; 
@@ -105,6 +144,12 @@ DOCTYPE html>
 <body>
 
     <div class="card">
+        
+        <!-- Photo of Sadiya -->
+        <div class="photo-container">
+            <img src="sadiya.jpg" alt="Sadiya">
+        </div>
+
         <h1>Student Evaluation</h1>
         <h2>Student: <span class="student-name">Sadiya</span><br>Subject: Being Absolutely Amazing</h2>
 
@@ -125,6 +170,25 @@ DOCTYPE html>
             <span class="grade">OUTSTANDING</span>
         </div>
 
+        <!-- ========================================== -->
+        <!-- YOUR PERSONAL MESSAGE -->
+        <!-- ========================================== -->
+        
+        <div class="love-note">
+            <strong>Happy Birthday, Sadiya! ❤️🎂</strong>
+            May Allah bless your life with endless barakah, protect your beautiful heart, fulfil your sincere wishes, and grant you success, good health, peace, and happiness beyond your expectations.
+            <br><br>
+            Never stop believing in yourself. Keep growing, keep shining, and never let life’s difficulties make you forget how special your existence is.
+            <br><br>
+            My heartfelt dua is that Allah writes beautiful things for your future, protects you from every evil eye, and keeps you smiling through every chapter of life. Ameen. 🤲❤️
+            <br><br>
+            You deserve a beautiful year ahead. Stay blessed, always!
+        </div>
+
+        <!-- ========================================== -->
+        <!-- DO NOT EDIT BELOW THIS LINE                  -->
+        <!-- ========================================== -->
+
         <button class="btn" onclick="document.getElementById('secret').style.display='block'">Click to Claim Reward</button>
         
         <div id="secret" class="hidden-message">
@@ -132,7 +196,7 @@ DOCTYPE html>
         </div>
 
         <div class="footer">
-            <strong>Teacher's Remarks:</strong> "Sadiya is a joy to have in class. She works incredibly hard to shape the future of her students, and she brings out the absolute best in everyone lucky enough to know her. She is top of the class."
+            <strong>Teacher's Remarks:</strong> "Sadiya is a joy to have in class. She works incredibly hard to shape the future of her students, and she brings out the absolute best in everyone lucky enough to know her."
         </div>
     </div>
 
