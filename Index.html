@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Official Report Card - Sadiya</title>
+    <style>
+        body { 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            background-color: #f4f7f6; 
+            color: #333; 
+            display: flex; 
+            justify-content: center; 
+            align-items: center; 
+            min-height: 100vh; 
+            margin: 0; 
+            padding: 20px; 
+        }
+        .card { 
+            background: white; 
+            border-radius: 15px; 
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1); 
+            padding: 30px; 
+            max-width: 400px; 
+            width: 100%; 
+            text-align: center; 
+            border-top: 8px solid #f39c12; /* A nice golden teacher theme */
+        }
+        h1 { 
+            color: #2c3e50; 
+            font-size: 24px; 
+            margin-bottom: 5px; 
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        h2 { 
+            color: #7f8c8d; 
+            font-size: 18px; 
+            font-weight: normal; 
+            margin-top: 0; 
+            margin-bottom: 30px; 
+            line-height: 1.5;
+        }
+        .student-name {
+            color: #e67e22;
+            font-weight: bold;
+            font-size: 22px;
+        }
+        .grade-row { 
+            display: flex; 
+            justify-content: space-between; 
+            border-bottom: 1px solid #eee; 
+            padding: 15px 0; 
+            font-size: 16px; 
+            text-align: left;
+        }
+        .grade { 
+            font-weight: bold; 
+            color: #27ae60; 
+            font-size: 18px; 
+            text-align: right;
+        }
+        .footer { 
+            margin-top: 30px; 
+            font-size: 15px; 
+            color: #555; 
+            font-style: italic; 
+            background-color: #f9f9f9;
+            padding: 15px;
+            border-radius: 8px;
+            border-left: 4px solid #f39c12;
+            text-align: left;
+        }
+        .btn { 
+            margin-top: 25px; 
+            padding: 14px 24px; 
+            background-color: #3498db; 
+            color: white; 
+            border: none; 
+            border-radius: 8px; 
+            font-size: 16px; 
+            font-weight: bold;
+            cursor: pointer; 
+            text-decoration: none; 
+            display: inline-block; 
+            width: 90%;
+            transition: 0.3s;
+        }
+        .btn:hover {
+            background-color: #2980b9;
+        }
+        .hidden-message { 
+            display: none; 
+            margin-top: 20px; 
+            padding: 20px; 
+            background-color: #e8f8f5; 
+            border-radius: 8px; 
+            color: #16a085; 
+            font-weight: bold; 
+            font-size: 16px;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <h1>Student Evaluation</h1>
+        <h2>Student: <span class="student-name">Sadiya</span><br>Subject: Being Absolutely Amazing</h2>
+
+        <div class="grade-row">
+            <span>Inspiring Students</span>
+            <span class="grade">A+</span>
+        </div>
+        <div class="grade-row">
+            <span>Patience & Kindness</span>
+            <span class="grade">A+</span>
+        </div>
+        <div class="grade-row">
+            <span>Making Me Smile</span>
+            <span class="grade">A+</span>
+        </div>
+        <div class="grade-row">
+            <span>Overall Performance</span>
+            <span class="grade">OUTSTANDING</span>
+        </div>
+
+        <button class="btn" onclick="document.getElementById('secret').style.display='block'">Click to Claim Reward</button>
+        
+        <div id="secret" class="hidden-message">
+            🎉 Happy Birthday, Sadiya! <br><br>Your reward is a special date night planned just for you. Check your texts for the details!
+        </div>
+
+        <div class="footer">
+            <strong>Teacher's Remarks:</strong> "Sadiya is a joy to have in class. She works incredibly hard to shape the future of her students, and she brings out the absolute best in everyone lucky enough to know her. She is top of the class."
+        </div>
+    </div>
+
+</body>
+</html>
